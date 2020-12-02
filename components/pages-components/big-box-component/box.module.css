@@ -12,3 +12,13 @@
 	position: relative;
 	height: 500px;
 }
+
+@media (max-width: 600px) {
+	.boxStyle {
+		min-width: 100px;
+		width: 350px;
+		height: 100vh;
+		flex-direction: column;
+		margin-top: 80px;
+	}
+}

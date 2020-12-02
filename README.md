@@ -1,30 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Expandana
+Expandana articles web apps
 
-## Getting Started
+Hello, My name Edy Susanto i make movies web apps using next js + typescript + react hooks for expandana technical test.
 
-First, run the development server:
+# TMDB API v3
+[Rest Service articles using mockable.io](http://demo3418193.mockable.io/getArticles).
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+# Feature
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. List of Articles
+2. Skeleton when loading fetch data
+3. View Detail
+4. Responsive for mobile web
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## How to Run the Web Apps
+WARNING: You must have node js and npm already installed in your computer
+### Clone the repo
 
-## Learn More
+Then Do The Following (in your terminal):
+1. cd expandana
+2. Type npm install / yarn ( if you have yarn)
+3. Wait for installing dependencies
+4. Check if node_modules folder appeared
+5. run command: 'yarn dev' or  'npm run dev' and wait for the process.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+if Success the web apps will running on browser at: localhost:3000
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

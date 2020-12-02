@@ -14,34 +14,17 @@ export default function Detail() {
 		}
 	}, []);
 
-	const customStyle ={
-		borderRadius: 12,
-		border: '5px solid white',
-		boxShadow: '0 0.1875rem 1.5rem rgba(0, 0, 0, 0.2)',
-		background: '#eedfcc'
-	}
-
-	const informationBox = {
-		boxShadow: '0 0.1875rem 1.5rem rgba(0, 0, 0, 0.2)',
-		background: '#fff',
-		marginLeft: 10,
-		borderRadius: 12,
-		padding: '0 20px',
-		maxWidth: 500,
-		overflowY: 'scroll'
-	}
-	
 	return (
 		<div className={styles.container}>
 			<header className={styles.header}>
 				<h1 className={styles.titleDetail}>{detailData.title}</h1>
 			</header>
 			<Box>
-				<div style={customStyle} className={styles.contentDetailContainer}>
+				<div className={styles.contentDetailContainerImage}>
 					<img className={styles.imageDetailContainer} src={detailData._imgurl}/>
 				</div>
 
-				<div style={informationBox} className={styles.contentDetailContainer}>
+				<div className={styles.contentDetailContainerInformation}>
 					<h2 className={styles.titleDetail}>Taukah Anda?</h2>
 					<div
 						className={styles.description}

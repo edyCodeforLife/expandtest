@@ -1,5 +1,5 @@
 import { IResponseSuccess, articles } from '../interface/articles';
-import { IGetArticlesServiceData, ArticlesService } from '../service/hello'
+import { IGetArticlesServiceData, ArticlesService } from '../service/article'
 
 export interface IGetArticlesService {
 	getDataArticles(handler:IResponseSuccess): void;
