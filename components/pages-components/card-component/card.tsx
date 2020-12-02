@@ -3,7 +3,7 @@ import styles from './card.module.css';
 
 function _Card(props: React.HTMLProps<HTMLDivElement>) {
     const { style = {} } = props;
-    return <div className={styles.card} style={style}>{props.children}</div>
+    return <div className={styles.cardStyle} style={style}>{props.children}</div>
 }
 
 export default memo(_Card);

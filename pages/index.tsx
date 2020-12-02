@@ -2,14 +2,20 @@
 import styles from '../styles/Home.module.css';
 import React, { useEffect, useState } from 'react';
 import { GetArticlesService, IGetArticlesService  } from './api/business/getArticles';
+import { article } from './api/interface/articles';
 import { Card } from '../components/pages-components/card-component/card'
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
+import Skeleton from 'react-loading-skeleton';
+import { useAppContext } from '../context/state';
+import { getDataArticles } from '../context/action';
+import { useRouter } from 'next/router';
+import { map, find } from 'lodash';
+import * as LS from 'local-storage';
 
 export default function Home() {
+	const router = useRouter()
 	const service: IGetArticlesService = new GetArticlesService();
 	const [ articlesState, setArticlesState ] = useState<any>({});
 	const [ loading, setLoading ] = useState<boolean>(true)
-
 	const getData = () => {
 		service.getDataArticles({
 			Success: (res) => {
@@ -19,11 +25,23 @@ export default function Home() {
 		})
 	}
 
+	const setDetailtoLS = (id: number) => {
+		let selectedData = find(articlesState.data, {id});
+		LS.set("detailSelected",selectedData);
+	}
+
 	useEffect(() => {
 		getData();
 	}, []);
 
-	console.log(articlesState)
+
+	const gotoDetail = ( id:number, slug: string) => {
+		setDetailtoLS(id);
+		router.push({
+			pathname: '/detail/[slug]',
+			query: { slug },
+		});
+	}
 
 	const renderLoading = () => {
 		return(
@@ -78,21 +96,22 @@ export default function Home() {
 	}
 
 	const renderData = () => {
+		const { data } = articlesState;
 		return(
-			articlesState.data && articlesState.data.map(item => {
+			articlesState && data && map(data,(item:article) => {
 				return(
-					<Card key={item.id}>
-						<div className={styles.contentCardContainer}>
+					<Card key={item.id} >
+						<div onClick={() => gotoDetail(item.id, item.slug)} className={styles.contentCardContainer}>
 							<img className={styles.imageStyle} src={item._imgurl} />
+							<p className={styles.titleContent}>{item.title}</p>
 						</div>
 					</Card>
-
 				)
 			})
 		);
 	}
 
-	const switchingRender = (loading) => {
+	const switchingRender = (loading:boolean) => {
 		switch(loading) {
 			case true:
 				return renderLoading();
@@ -107,17 +126,14 @@ export default function Home() {
 	return (
 		<div className={styles.container}>
 			<main className={styles.main}>
-				<h1 className={styles.title}>
-					Welcome to <a href="https://nextjs.org">Next.js!</a>
-				</h1>
-				<p className={styles.description}>
-					Get started by editing{' '}
-					<code className={styles.code}>pages/index.js</code>
-				</p>
+				<header className={styles.header}>
+					<h1 className={styles.titleDetail}>Expandana</h1>
+				</header>
 
 				<div className={styles.grid}>
 					{switchingRender(loading)}
 				</div>
+
 			</main>
 
 			<footer className={styles.footer}>

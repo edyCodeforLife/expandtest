@@ -1,5 +1,5 @@
 
-.card {
+.cardStyle {
     border-radius: 14px;
     box-shadow: 6px 0 14px 0 rgba(217, 232, 255, 0.5);
     background-color: #ffffff;
@@ -11,4 +11,14 @@
     position: relative;
     margin: 10px;
     display: inline-flex;
+    flex-wrap: wrap;
+    opacity: 0.8;
+    transition: 0.3s;
+    max-height: 270px;
+}
+
+.cardStyle:hover {
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 6px 14px 14px 0 rgba(217, 232, 255, 0.5);
 }

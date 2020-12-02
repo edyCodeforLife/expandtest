@@ -18,7 +18,7 @@ export class GetArticlesService implements IGetArticlesService {
 			return await handler.Success<articles>(response.data);
 		}
 		catch (e) {
-			return console.log(e)
+			return console.log(e);
 		}
 	}
 }
