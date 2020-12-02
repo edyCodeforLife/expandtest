@@ -1,1 +1,1 @@
-export const urlArticles = 'https://demo3418193.mockable.io/getArticles';
+export const urlArticles = 'https://d3azclimn6leqm.cloudfront.net/test/data.json';

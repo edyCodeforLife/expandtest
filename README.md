@@ -4,7 +4,7 @@ Expandana articles web apps
 Hello, My name Edy Susanto i make movies web apps using next js + typescript + react hooks for expandana technical test.
 
 # TMDB API v3
-[Rest Service articles using mockable.io](https://demo3418193.mockable.io/getArticles).
+[Rest Service articles using mockable.io](https://d3azclimn6leqm.cloudfront.net/test/data.json).
 
 # Feature
 
