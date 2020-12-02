@@ -1,0 +1,1 @@
+export const urlArticles = 'http://demo3418193.mockable.io/getArticles';

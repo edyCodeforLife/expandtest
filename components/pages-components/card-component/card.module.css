@@ -1,0 +1,14 @@
+
+.card {
+    border-radius: 14px;
+    box-shadow: 6px 0 14px 0 rgba(217, 232, 255, 0.5);
+    background-color: #ffffff;
+    padding: 24px;
+    cursor: pointer;
+    border: 1px solid #f0f0f0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    position: relative;
+    margin: 10px;
+    display: inline-flex;
+}
