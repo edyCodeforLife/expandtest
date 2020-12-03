@@ -1,0 +1,10 @@
+
+.mobileHeaderStyle {
+	max-width: inherit;
+	display: flex;
+	background-color: #164378;
+	padding: 15px;
+	justify-content: space-between;
+	flex-direction: column;
+	position: relative;
+}

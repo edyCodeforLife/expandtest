@@ -1,0 +1,47 @@
+
+.mobileFooter {
+	background-color: #154277;
+	padding: 20px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+.containerSectionFooter {
+	margin: 5px 0px;
+}
+
+.logoStyle {
+	width: 160px;
+	height: 40px;
+}
+
+.textStyle {
+	color: #859AB7;
+	font-size: 14px;
+	margin: 10px 0px;
+}
+
+.contentLastSection {
+	display: flex;
+	justify-content: space-between;
+}
+
+.buttonContainer {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	outline: none;
+}
+
+.buttonNavtoTopStyle {
+	cursor: pointer;
+	height: 50px;
+	outline: none;
+	width: 50px;
+	min-width: 50px;
+	background-color: #154277;
+	border-radius: 15px;;
+	border: 1px solid #154277;
+	box-shadow: 1px 1px 12px 0px white;;
+}

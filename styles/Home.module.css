@@ -184,13 +184,155 @@
 
 .imageStyle {
 	max-width: 400px;
-	width: 300px;
+	width: 355px;
+	border-radius: 15px;
 }
 
 .titleContent {
 	width: 300px;
 	text-align: center;
-   	word-wrap: break-word;
+	word-wrap: break-word;
+	color: #154277;
+	font-weight: 700;
+	margin-top: 10px;
+	font-size: 18px;
+	line-height: 1.6;
+}
+
+.containerMobileView {
+	background-color: #fafafa;
+	max-width: 400px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 12px;
+	min-height: 90vh;
+	overflow: hidden;
+}
+
+.logoContainer {
+	display: inline-flex;
+	justify-content: space-between;
+	width: 100%;
+	line-height: 2.6;
+	height: 0px;
+	position: relative;
+	padding: 0px 10px;
+}
+
+.imageLogo {
+	width: 160px;
+	height: 40px;
+}
+
+.iconMenuBar {
+	color: #FFFFFF;
+	font-size: 25px;
+	margin-top: 6px;
+}
+
+.containerHeaderImage {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	top: 85px;
+}
+
+.imageTopHeader {
+	width: 300px;
+	height: 200px;
+	border-radius: 30px;
+}
+
+.contentContainer {
+	position: relative;
+	margin-top: 100px;
+	padding: 0px 20px;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentTextStyle {
+	color: #154277;
+	font-weight: 700;
+	text-align: center;
+	width: 344px;
+	word-wrap: break-word;
+	margin-left: 8px;
+}
+
+.inputContainer {
+	position: relative;
+	width: 356px;
+	height: 40px;
+	padding: 15px;
+	border: 2px solid #607DA1;;
+	color: #888888;
+}
+
+.inputText {
+	width: 303px;
+	height: 30px;
+	border: none;
+	background: transparent;
+	position: absolute;
+	bottom: 3px;
+	outline: none;
+	text-decoration: none;
+}
+
+.searchIcon {
+	position: absolute;
+	right: 0;
+	margin-right: 10px;
+	top: 10px;
+}
+
+.subTitle {
+	padding: 0px 20px;
+	color: #154277;
+}
+
+.borderLine {
+	width: 75px;
+	margin-left: 20px;
+	background-color: #FF8966;
+	height: 6px;
+	border-radius: 15px;
+	margin-top: -13px;
+}
+
+.tagContentText {
+	color: #FF997B
+}
+
+.contentCardContainer > div {
+	text-align: left;
+	width: 100%;
+	margin: 3px 0px
+}
+
+.descriptionSubtitle {
+	font-size: 14px;
+	color: rgba(0,0,0,.6);
+	line-height: 1.6;
+}
+
+.dateFontStyle {
+	margin-top: 5px;
+	font-size: 13px;
+	font-style: italic;
+	color: rgba(0,0,0,0.7)
+}
+
+.arrowUpStyles {
+	color: white;
+	font-size: 18px;
 }
 
 

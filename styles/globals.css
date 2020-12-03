@@ -8,11 +8,11 @@ body {
     background: #E0E3EF;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     body {
         padding: 20px;
     }
-}
+} */
 
 a {
     color: inherit;

@@ -5,7 +5,7 @@ export interface articles {
 }
 
 export interface article {
-	content: string,
+	content: string;
 	created_at: Date | string;
 	created_by?: string;
 	excerpt: string;

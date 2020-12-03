@@ -12,9 +12,10 @@ Hello, My name Edy Susanto i make movies web apps using next js + typescript + r
 # Feature
 
 1. List of Articles
-2. Skeleton when loading fetch data
-3. View Detail
-4. Responsive for mobile web
+2. View Detail
+3. Responsive for mobile web
+4. Search articles by title
+5. Scroll to top button in footer
 
 ## How to Run the Web Apps
 WARNING: You must have node js and npm already installed in your computer
