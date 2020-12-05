@@ -91,6 +91,7 @@ export default function Home() {
 	const textLogoUrl = "https://learn.expandana.id/expandana-text-logo.png";
 	const imageHeaderUrl = "https://learn.expandana.id/invest.webp";
 	const [ articlesState, setArticlesState ] = useState<any>({});
+	const [ masterArticlesState, setMasterArticlesState ] = useState<any>({});
 	const [ loading, setLoading ] = useState<boolean>(true);
 	const [ querySearch, setQuerySearch ] = useState("");
 	const userInteraction = useRef<boolean>(false);
@@ -99,6 +100,7 @@ export default function Home() {
 			Success: (res) => {
 				setLoading(false);
 				setArticlesState(res);
+				setMasterArticlesState(res);
 			}
 		})
 	}
@@ -130,9 +132,9 @@ export default function Home() {
 
 	const filterSearchQuery = (inputValue: string) => {
 		let searchValue = inputValue.toLowerCase()
-		let dataSearch = clone(articlesState.data);
+		let dataSearch = clone(masterArticlesState.data);
 
-		if (articlesState && articlesState.data && articlesState.data.length > 0) {
+		if (masterArticlesState && masterArticlesState.data && masterArticlesState.data.length > 0) {
 			let filterData = filter(dataSearch, item => {
 				return item.title.toLowerCase().includes(searchValue);
 			});
